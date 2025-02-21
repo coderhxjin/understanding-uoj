@@ -29,3 +29,14 @@
 ...
 ```
 其中每行两个字符串（不包含空格），中间用一个空格分隔，表示一对键值对。
+
+已知配置项：
+- `n_tests` 测试点个数
+- `input_pre/output_pre` 输入/输出数据文件名前缀（一般相同）
+- `input_suf/output_suf` 输入/输出数据文件名后缀
+- `time_limit/memory_limit/output_limit` 相关限制（）
+- `n_ex_tests` 附加数据（包含样例在内）组数
+- `n_sample_tests` 样例组数
+- `subtask_type_<subtask-id>` 子任务类型，其中：
+- - `packed` 表示若有非 AC 数据点即记作 0 分
+- - `min` 表示取所有测试点分数最小值
